@@ -1,6 +1,8 @@
 # Infiniti Q50 CAN Bus Decoding
 
-This is an ongoing effort to reverse engineer the CAN bus on my Infiniti Q50, decoding as many messages and signals as possible. Everything here was worked out empirically: logging traffic, triggering things in the car (doors, lights, pedals, buttons), and watching which bytes change.
+This is an ongoing effort to reverse engineer the CAN bus on my 2019 Infiniti Q50, decoding as many messages and signals as possible. Everything here was worked out empirically: logging traffic, triggering things in the car (doors, lights, pedals, buttons), and watching which bytes change.
+
+To my knowledge, the CAN platform from years 2014-2024 should be similar enough to where you can work off of this data but please confirm on your own vehicle before blindly using the DBC file.
 
 > [!WARNING]
 > **This is unofficial and incomplete.** None of it comes from Nissan/Infiniti documentation. Some signals are educated guesses, some bit widths and scaling factors are approximate, and some of it may simply be wrong. Verify anything before relying on it, and **don't use this data for anything safety-critical.**
