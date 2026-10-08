@@ -1,4 +1,19 @@
-# Q50 Gauge CAN Database
+# Infiniti Q50 CAN Bus Decoding
+
+This is an ongoing effort to reverse engineer the CAN bus on my Infiniti Q50, decoding as many messages and signals as possible. Everything here was worked out empirically: logging traffic, triggering things in the car (doors, lights, pedals, buttons), and watching which bytes change.
+
+> [!WARNING]
+> **This is unofficial and incomplete.** None of it comes from Nissan/Infiniti documentation. Some signals are educated guesses, some bit widths and scaling factors are approximate, and some of it may simply be wrong. Verify anything before relying on it, and **don't use this data for anything safety-critical.**
+
+## How to read this
+
+- Each message has a header (CAN ID, description, DLC, interval) and a byte/bit grid. Bit 7 is the most significant bit of each byte.
+- Signals that span multiple bytes are merged across the grid. Where a signal wraps into part of the next byte, the continuation is marked with ↑ or ↓.
+- A `?` after a name means the meaning is unconfirmed.
+- Blank cells haven't been decoded yet. They may be unused, or I just haven't figured them out.
+- Enum tables list the observed values for multi-bit signals. Values missing from a table haven't been seen.
+
+Corrections and additions are welcome. If you've confirmed (or disproved) anything here on your own car, please open an issue or PR.
 
 - [0x002 Steering Angle](#0x002-steering-angle)
 - [0x160 Accelerator Pedal](#0x160-accelerator-pedal)
