@@ -31,7 +31,7 @@ Corrections and additions are welcome. If you've confirmed (or disproved) anythi
 - [0x354 Chassis Control](#0x354-chassis-control)
 - [0x355 Cluster Status #3](#0x355-cluster-status-3)
 - [0x358](#0x358)
-- [0x35D](#0x35d)
+- [0x35D Brake Signal](#0x35d-brake-signal)
 - [0x385 TPMS Info](#0x385-tpms-info)
 - [0x3AF](#0x3af)
 - [0x421 Automatic Transmission](#0x421-automatic-transmission)
@@ -1309,7 +1309,7 @@ Corrections and additions are welcome. If you've confirmed (or disproved) anythi
 
 ---
 
-## 0x35D
+## 0x35D Brake Signal
 
 <table>
   <tr>
