@@ -721,7 +721,7 @@ Corrections and additions are welcome. If you've confirmed (or disproved) anythi
     <td colspan="2" align="center">CRUISE_CONTROL</td>
     <td align="center">CC Enabled</td>
     <td></td>
-    <td colspan="2" align="center">BARS</td>
+    <td colspan="2" align="center">DISTANCE_BARS</td>
     <td align="center">Display MPH</td>
     <td align="center">Adaptive CC</td>
   </tr>
@@ -770,7 +770,7 @@ Corrections and additions are welcome. If you've confirmed (or disproved) anythi
 |--------|----------|--------|
 | CRUISE_CONTROL | Byte 0 [7:6] | 2 |
 | CC Enabled | Byte 0 [5] | 1 |
-| BARS | Byte 0 [3:2] | 2 |
+| DISTANCE_BARS | Byte 0 [3:2] | 2 |
 | Display MPH | Byte 0 [1] | 1 |
 | Adaptive CC | Byte 0 [0] | 1 |
 | CAR_AHEAD | Byte 1 [7:6] | 2 |
@@ -803,7 +803,7 @@ Corrections and additions are welcome. If you've confirmed (or disproved) anythi
 | 0b10 | CC Blink |
 | 0b11 | Yellow CC (Warning) |
 
-### 0x2B1 · BARS
+### 0x2B1 · DISTANCE_BARS
 
 | Value | Meaning |
 |-------|---------|
